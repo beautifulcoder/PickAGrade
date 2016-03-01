@@ -1,0 +1,9 @@
+.ntvs_analysis.dat
+.ntvs_analysis.dat.tmp
+*.suo
+.vs/
+
+[Oo]bj/
+*.dll
+
+node_modules

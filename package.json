@@ -1,0 +1,19 @@
+{
+  "name": "PickAGrade",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Pick A Grade App",
+  "author": {
+    "name": "CR",
+    "email": "reyesc@gmail.com"
+  },
+  "scripts": {
+    "start": "node bin/www",
+    "test": "node_modules/.bin/mocha --ui bdd --use_strict tests/**/*.js"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.0",
+    "supertest": "^1.1.0"
+  }
+}
