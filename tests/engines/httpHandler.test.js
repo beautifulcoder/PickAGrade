@@ -4,7 +4,6 @@ var should = require('should');
 
 describe('An HTTP engine', function () {
   it('handles errors', function () {
-    'use strict';
     const res = response();
     target({ message: 'error' }, res);
     res.getResult().should.equal('500text/plain; charset=utf-8Error: error');

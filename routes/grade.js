@@ -7,7 +7,14 @@ var request = {
 };
 
 function getGrade(req, res) {
+  request.data = getData(req.url);
   engine.render(request, res, engine.httpHandler);
+}
+
+function getData(url) {
+  return {
+    grade: engine.gradeParser(url)
+  };
 }
 
 module.exports = getGrade;

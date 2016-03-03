@@ -33,10 +33,14 @@
     <Compile Include="bin\www" />
     <Compile Include="app.js" />
     <Compile Include="engines\engine.js" />
+    <Compile Include="engines\gradeParser.js" />
     <Compile Include="engines\httpHandler.js" />
     <Compile Include="engines\render.js" />
     <Compile Include="routes\grade.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="tests\engines\gradeParser.test.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="tests\engines\httpHandler.test.js">
       <Publish>False</Publish>
     </Compile>
@@ -46,9 +50,13 @@
     <Compile Include="tests\routes\grade.request.js">
       <Publish>False</Publish>
     </Compile>
-    <Content Include="package.json" />
+    <Content Include="package.json">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="README.md" />
-    <Content Include="views\grade.html" />
+    <Content Include="views\grade.html">
+      <Publish>True</Publish>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
