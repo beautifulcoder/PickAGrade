@@ -8,7 +8,9 @@
   };
 
   function writeHead(returnCode, headers) {
+    'use strict';
     result += returnCode;
+
     for (let prop in headers) {
       if (headers.hasOwnProperty(prop)) {
         result += headers[prop];

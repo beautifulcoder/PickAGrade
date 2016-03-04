@@ -35,6 +35,7 @@
     <Compile Include="engines\engine.js" />
     <Compile Include="engines\gradeParser.js" />
     <Compile Include="engines\httpHandler.js" />
+    <Compile Include="engines\mustache.js" />
     <Compile Include="engines\render.js" />
     <Compile Include="routes\grade.js" />
     <Compile Include="routes\route.js" />
@@ -42,6 +43,9 @@
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\engines\httpHandler.test.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="tests\engines\mustache.test.js">
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\engines\response.mock.js">

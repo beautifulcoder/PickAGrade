@@ -1,16 +1,16 @@
 ﻿var fs = require('fs');
 var path = require('path');
 
-function render(req, res, fn) {
+function render(req, res, handlerFn, templateFn) {
   const fullpath = path.join(__dirname, '../') + req.path;
 
   fs.readFile(fullpath, 'utf-8', function (err, text) {
     const content = {
-      response: text,
+      response: templateFn ? templateFn(text, req.data) : text,
       type: req.type,
       nocache: req.nocache
     };
-    fn(err, res, content);
+    handlerFn(err, res, content);
   });
 }
 
