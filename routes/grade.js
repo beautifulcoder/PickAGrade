@@ -1,4 +1,5 @@
 ﻿var engine = require('../engines/engine');
+var witty = require('../data/witty');
 
 var request = {
   path: 'views/grade.html',
@@ -12,8 +13,12 @@ function getGrade(req, res) {
 }
 
 function getData(url) {
+  const grade = engine.gradeParser(url);
+  const wittyText = witty(grade);
+
   return {
-    grade: engine.gradeParser(url)
+    grade: grade,
+    wittyText: wittyText
   };
 }
 

@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="bin\www" />
     <Compile Include="app.js" />
+    <Compile Include="data\witty.js" />
     <Compile Include="engines\engine.js" />
     <Compile Include="engines\gradeParser.js" />
     <Compile Include="engines\httpHandler.js" />
@@ -39,6 +40,9 @@
     <Compile Include="engines\render.js" />
     <Compile Include="routes\grade.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="tests\data\witty.test.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="tests\engines\gradeParser.test.js">
       <Publish>False</Publish>
     </Compile>
@@ -64,8 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="data\" />
     <Folder Include="engines\" />
     <Folder Include="tests\" />
+    <Folder Include="tests\data\" />
     <Folder Include="tests\engines\" />
     <Folder Include="tests\routes\" />
     <Folder Include="views\" />
