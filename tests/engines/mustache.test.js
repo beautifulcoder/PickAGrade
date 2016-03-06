@@ -1,5 +1,4 @@
 ﻿var target = require('../../engines/mustache');
-var should = require('should');
 
 describe('A mustache template engine', function () {
   const template = 'some {{template}} with {{value}}';

@@ -1,5 +1,4 @@
 ﻿var target = require('../../engines/gradeParser');
-var should = require('should');
 
 describe('A grade parser', function () {
   it('returns a grade with plus', function () {

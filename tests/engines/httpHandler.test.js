@@ -1,6 +1,5 @@
 ﻿var target = require('../../engines/httpHandler');
 var response = require('./response.mock');
-var should = require('should');
 
 describe('An HTTP engine', function () {
   it('handles errors', function () {
