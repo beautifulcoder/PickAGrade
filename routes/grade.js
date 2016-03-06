@@ -9,7 +9,8 @@ var request = {
 
 function getGrade(req, res) {
   request.data = getData(req.url);
-  engine.render(request, res, engine.httpHandler, engine.mustache);
+  const param = { handler: engine.httpHandler, template: engine.mustache };
+  engine.render(request, res, param);
 }
 
 function getData(url) {
