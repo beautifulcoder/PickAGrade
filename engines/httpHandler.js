@@ -1,15 +1,23 @@
 ﻿function httpHandler(err, res, content) {
   if (err) {
-    res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end(`Error: ${err.message}`);
+    respondWithError(res, err);
   } else {
-    const headers = { 'Content-Type': content.type };
-    if (content.nocache) {
-      headers['Cache-Control'] = 'no-cache';
-    }
-    res.writeHead(200, headers);
-    res.end(content.response);
+    respondWithContent(res, content);
   }
+}
+
+function respondWithError(res, err) {
+  res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end(`Error: ${err.message}`);
+}
+
+function respondWithContent(res, content) {
+  const headers = { 'Content-Type': content.type };
+  if (content.nocache) {
+    headers['Cache-Control'] = 'no-cache';
+  }
+  res.writeHead(200, headers);
+  res.end(content.response);
 }
 
 module.exports = httpHandler;
