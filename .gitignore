@@ -1,4 +1,4 @@
-.ntvs_analysis.dat
+﻿.ntvs_analysis.dat
 .ntvs_analysis.dat.tmp
 *.suo
 .vs/
@@ -7,3 +7,5 @@
 *.dll
 
 node_modules
+web.config
+pickagrade.ftp
