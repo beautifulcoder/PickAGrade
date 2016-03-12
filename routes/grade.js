@@ -19,7 +19,8 @@ function getData(url) {
 
   return {
     grade: grade,
-    wittyText: wittyText
+    wittyText: wittyText,
+    virtualPath: process.env.virtualPath || ''
   };
 }
 
