@@ -40,6 +40,7 @@
     <Compile Include="engines\render.js" />
     <Compile Include="routes\grade.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="routes\style.js" />
     <Compile Include="tests\data\witty.test.js">
       <Publish>False</Publish>
     </Compile>
@@ -58,10 +59,16 @@
     <Compile Include="tests\routes\grade.request.js">
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="tests\routes\style.request.js">
+      <Publish>False</Publish>
+    </Compile>
     <Content Include="package.json">
       <Publish>True</Publish>
     </Content>
     <Content Include="README.md" />
+    <Content Include="styles\base.css" />
+    <Content Include="styles\card.css" />
+    <Content Include="styles\witty.css" />
     <Content Include="views\grade.html">
       <Publish>True</Publish>
     </Content>
@@ -70,6 +77,7 @@
     <Folder Include="bin\" />
     <Folder Include="data\" />
     <Folder Include="engines\" />
+    <Folder Include="styles\" />
     <Folder Include="tests\" />
     <Folder Include="tests\data\" />
     <Folder Include="tests\engines\" />
