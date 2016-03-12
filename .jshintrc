@@ -3,7 +3,7 @@
   "eqeqeq": true,
   "freeze": true,
   "maxdepth": 2,
-  "maxstatements": 5,
+  "maxstatements": 6,
   "maxparams": 3,
   "funcscope": true,
   "esversion": 6,

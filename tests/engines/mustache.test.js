@@ -8,6 +8,12 @@ describe('A mustache template engine', function () {
     result.should.equal('some template with value');
   });
 
+  it('fills a template with duplicate values', function () {
+    const duplicateTemplate = 'some {{value}} with {{value}}';
+    const result = target(duplicateTemplate, { value: 'value' });
+    result.should.equal('some value with value');
+  });
+
   it('does not fill a template without proper values', function () {
       const result = target(template, { bad: 'value'});
       result.should.equal('some {{template}} with {{value}}');
