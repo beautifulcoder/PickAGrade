@@ -1,6 +1,22 @@
-﻿body {
-    font-size: 100%;
-    color: #333;
-    padding: 0;
-    margin: 0;
+﻿body, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  color: #333;
+  font-family: georgia, sans-serif;
+}
+
+@media screen and (min-width: 40em) and (max-width: 75em) {
+  body {
+    font-size: 112%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  body {
+    font-size: 125%;
+  }
 }
