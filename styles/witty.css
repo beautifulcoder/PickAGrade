@@ -1,3 +1,13 @@
 ﻿.witty {
   margin: 1em 2em;
+  text-align: center;
+  font-style: italic;
+}
+
+.witty:before {
+  content: "“";
+}
+
+.witty:after {
+  content: "”";
 }
