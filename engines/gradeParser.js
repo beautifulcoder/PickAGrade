@@ -3,7 +3,8 @@
   const grade = getGrade(url, gradeIndex);
   const symbolIndex = url.indexOf('/', gradeIndex) + 1;
   const symbol = symbolIndex > 0 ? getSymbol(url, symbolIndex) : '';
-  return grade + symbol;
+
+  return getGradeWithBoundary(grade, symbol);
 }
 
 function getGrade(url, index) {
@@ -24,6 +25,16 @@ function convertSymbolToSign(symbol) {
     return '+';
   }
   return '-';
+}
+
+function getGradeWithBoundary(grade, symbol) {
+  if (grade === 'A' && symbol === '+') {
+    return grade;
+  } else if (grade === 'F' && symbol !== '') {
+    return grade;
+  }
+
+  return grade + symbol;
 }
 
 module.exports = gradeParser;
