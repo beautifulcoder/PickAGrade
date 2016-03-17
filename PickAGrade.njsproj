@@ -33,6 +33,7 @@
     <Compile Include="bin\www" />
     <Compile Include="app.js" />
     <Compile Include="data\data.js" />
+    <Compile Include="data\image.js" />
     <Compile Include="data\sign.js" />
     <Compile Include="data\witty.js" />
     <Compile Include="engines\engine.js" />
@@ -43,6 +44,9 @@
     <Compile Include="routes\grade.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="routes\style.js" />
+    <Compile Include="tests\data\image.test.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="tests\data\sign.test.js">
       <Publish>False</Publish>
     </Compile>
