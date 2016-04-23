@@ -2,6 +2,7 @@
 .ntvs_analysis.dat.tmp
 *.suo
 .vs/
+*.DotSettings.user
 
 [Oo]bj/
 *.dll
@@ -9,3 +10,6 @@
 node_modules
 web.config
 pickagrade.ftp
+
+tsd.json
+typings/
