@@ -72,7 +72,7 @@
       <Publish>False</Publish>
     </Compile>
     <Content Include="package.json">
-      <Publish>True</Publish>
+      <Publish>False</Publish>
     </Content>
     <Content Include="README.md" />
     <Content Include="styles\base.css" />
@@ -104,18 +104,24 @@
     <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
     <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
     <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
+    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\should\should.d.ts" />
     <TypeScriptCompile Include="typings\should\should.d.ts" />
     <TypeScriptCompile Include="typings\should\should.d.ts" />
+    <TypeScriptCompile Include="typings\should\should.d.ts" />
+    <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
     <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
     <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
+    <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
