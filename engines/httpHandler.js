@@ -13,9 +13,15 @@ function respondWithError(res, err) {
 
 function respondWithContent(res, content) {
   const headers = { 'Content-Type': content.type };
+
   if (content.nocache) {
     headers['Cache-Control'] = 'no-cache';
   }
+
+  if (content.cache) {
+    headers['Cache-Control'] = 'max-age=31536000';
+  }
+
   res.writeHead(200, headers);
   res.end(content.response);
 }

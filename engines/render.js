@@ -8,8 +8,10 @@ function render(req, res, engine) {
     const content = {
       response: engine.template ? engine.template(text, req.data) : text,
       type: req.type,
-      nocache: req.nocache
+      nocache: req.nocache,
+      cache: req.cache
     };
+
     engine.handler(err, res, content);
   });
 }

@@ -36,6 +36,7 @@
     <Compile Include="data\image.js" />
     <Compile Include="data\sign.js" />
     <Compile Include="data\witty.js" />
+    <Compile Include="engines\bundler.js" />
     <Compile Include="engines\engine.js" />
     <Compile Include="engines\gradeParser.js" />
     <Compile Include="engines\httpHandler.js" />
@@ -53,6 +54,7 @@
     <Compile Include="tests\data\witty.test.js">
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="tests\engines\bundler.test.js" />
     <Compile Include="tests\engines\gradeParser.test.js">
       <Publish>False</Publish>
     </Compile>
@@ -102,28 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
-    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
-    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
-    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
-    <TypeScriptCompile Include="typings\node\node.d.ts" />
-    <TypeScriptCompile Include="typings\node\node.d.ts" />
-    <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\should\should.d.ts" />
-    <TypeScriptCompile Include="typings\should\should.d.ts" />
-    <TypeScriptCompile Include="typings\should\should.d.ts" />
-    <TypeScriptCompile Include="typings\should\should.d.ts" />
-    <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
-    <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
-    <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
     <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
-    <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
-    <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
-    <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

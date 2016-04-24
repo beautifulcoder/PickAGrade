@@ -21,7 +21,8 @@ function getData(url) {
     wittyText: data.getWittyText(grade),
     virtualPath: process.env.virtualPath || '',
     signColor: data.getGradeSign(grade),
-    gradeImage: data.getGradeImage(grade)
+    gradeImage: data.getGradeImage(grade),
+    styleBundle: engine.bundler()
   };
 }
 
