@@ -8,7 +8,6 @@
   };
 
   function writeHead(returnCode, headers) {
-    'use strict';
     result += returnCode;
 
     for (let prop in headers) {
